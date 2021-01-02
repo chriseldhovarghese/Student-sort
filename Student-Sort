@@ -5,9 +5,7 @@ public class StudentSort {
         {
             for (int j = i+1; j < students.length; j++)
             {
-                if (students[i].getClassNumber(
-
-                ) > students[j].getClassNumber()) {
+                if (students[i].getClassNumber() > students[j].getClassNumber()) {
                     final Student temporaryStore = students[i];
                     students[i] = students[j];
                     students[j] = temporaryStore;
