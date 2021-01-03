@@ -24,10 +24,10 @@ public class StudentTest {
     /**
      * This is where the  IllegalArgumentException unit testing is done
      */
-    @Test(expected = IllegalArgumentException.class)
+    @Test(expected = NullPointerException.class)
     public void testStudentWithEmptyName()
     {
         //Act
-        final Student student = new Student("", 3,50);
+        new Student(null, 3,50);
     }
 }
